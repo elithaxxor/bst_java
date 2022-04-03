@@ -3,6 +3,8 @@ package Basic_Permutation;
 // make two sets of-- scanned items and non scanned items.
 // full = full string ; prefix = portion checked ; remaining = what needs to be checked
 // .substring returns remaining string from given point .
+// 'boat'--> 4 * 3 * 2 * 1 = 24 possibilities
+
 public class Basic_Permuatation {
 
     public static void permute(String full) throws Exception {
@@ -19,7 +21,6 @@ public class Basic_Permuatation {
             return;
             //throw new Exception("[-] Null");
         }int remain_len = remaining.length();
-
 
         for (int i = 0; i < remaining.length(); i++){
             findPermute(prefix+remaining.charAt(i),

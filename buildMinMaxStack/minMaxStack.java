@@ -26,10 +26,14 @@ public class minMaxStack {
         System.out.println("[+] [MAIN-STACK]:\n\t"+ mainStack.toString());
     }
     public int top(){
+
         return mainStack.peek();
     }
 
     public int getMin(){
+        System.out.println("[+] [MIN-STACK] MIN RESEULT :\n\t"+ minStack.peek());
+        System.out.println("[+] [MAIN-STACK] MIN RESEULT :\n\t"+ mainStack.peek());
+
         return minStack.peek();
     }
     public static void main(String[] args){
