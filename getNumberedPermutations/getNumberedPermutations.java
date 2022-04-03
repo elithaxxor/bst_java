@@ -36,12 +36,20 @@ public class getNumberedPermutations {
     }
 
     public static void main(String[] args){
-        List<Integer> array = new ArrayList<Integer>();
+        List<Integer> unsorted = new ArrayList<Integer>();
         getNumberedPermutations getperm = new getNumberedPermutations();
-        array.add(1);
-        array.add(2);
-        array.add(3);
-        System.out.println(array);
-        getperm.getPermutations(array);
+
+        //[MAKE RANDOM ARRAY]
+        // int[] unsorted = new int[26];
+        int upperLimit = 25;
+        Random rand = new Random();
+        int val = rand.nextInt(upperLimit);
+
+        for(int x = 0; x <= val; x++){
+            int randNum = rand.nextInt();
+            unsorted.add(randNum);
+        } System.out.println("[+] Randomly unSorted Array:\n\t"+ Arrays.toString(new List[]{unsorted})+"\n");
+        System.out.println(unsorted);
+        getperm.getPermutations(unsorted);
     }
 }
